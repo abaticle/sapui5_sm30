@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	
+	<title>MySM30</title>
+
+	<script id="sap-ui-bootstrap"
+		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_bluecrystal"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-resourceroots='{"test": ""}'>
+	</script>
+	
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function () {
+			
+			var app = new sap.m.App("myApp", {
+				initialPage: "page1"
+			});
+			
+			var page = new sap.m.Page("page", {
+				title : "Hello World",
+				showNavButton : false,
+				content : [
+					
+				]
+			});
+			
+			app.addPage(page);
+			app.placeAt("content");
+		});
+		
+
+	</script>
+</head>
+<body class="sapUiBody" id="content">
+</body>
+</html>
